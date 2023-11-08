@@ -13,8 +13,8 @@
 
       return this.http.get('https://restcountries.com/v3.1/lang/spanish')
       .pipe(
-        map( (resp:any) =>
-          resp.map( (pais:any)=> ({ nombre: pais.name, codigo: pais.alpha3code })
+        map((resp:any) =>
+          resp.map((pais:any) => ({ nombre: pais.name, codigo: pais.alpha3Code })
           )
         )
       );
